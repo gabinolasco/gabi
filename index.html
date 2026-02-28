@@ -211,6 +211,8 @@
             width: 100%;
             display: block;
             object-fit: contain;
+            background: white;
+            max-height: 600px;
         }
 
         .carousel-button {
@@ -443,7 +445,7 @@
                 <div class="carousel-container">
                     <div class="carousel-track" id="carouselTrack">
                         <div class="carousel-slide">
-                            <img src="https://i.imgur.com/9kB8IVn.jpeg" alt="Lu Embalagens - Perfil">
+                            <img src="https://i.imgur.com/4lIbZAN.jpeg" alt="Lu Embalagens - Conteúdo">
                         </div>
                         <div class="carousel-slide">
                             <img src="https://i.imgur.com/Tw0Hm9K.jpeg" alt="Lu Embalagens - Conteúdo">
@@ -456,185 +458,172 @@
             </div>
             
             <div class="case-metrics">
-                <h3 class="metrics-title">📈 Performance - 30 dias</h3>
+                <h3 class="metrics-title">📈 Impacto Real - 30 dias</h3>
                 <div class="metrics-grid">
                     <div class="metric-item">
-                        <strong>12K+</strong>
-                        interações no perfil
+                        <strong>+30%</strong>
+                        vendas no site
                     </div>
                     <div class="metric-item">
-                        <strong>+16,8%</strong>
-                        em visitas ao perfil
+                        <strong>+15%</strong>
+                        conversas qualificadas
                     </div>
                     <div class="metric-item">
                         <strong>2,8K</strong>
-                        toques em links externos
+                        cliques em links
                     </div>
                     <div class="metric-item">
-                        <strong>Estratégia integrada</strong>
-                        com resultados desde o primeiro mês
+                        <strong>12K+</strong>
+                        interações no perfil
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Agency Note -->
-        <div class="agency-note">
+        <div class="agency-note" style="display: none;">
             💼 Alguns projetos apresentados foram desenvolvidos em colaboração com agências, onde atuei especificamente em copywriting, roteiros e estratégia de conteúdo.
         </div>
 
+        <!-- Agency Projects Carousel -->
+        <section class="featured-case" style="background: linear-gradient(135deg, #6B5D54 0%, #A08B7A 100%);">
+            <span class="case-badge">🤝 Colaboração com Agências</span>
+            <h2 class="case-title">Projetos em Parceria</h2>
+            <p class="case-subtitle">Projetos desenvolvidos em parceria com agência, onde atuei especificamente em copy, roteiro, legenda e auxílio na estratégia de conteúdo</p>
+            
+            <div class="case-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="agencyCarouselTrack">
+                        <div class="carousel-slide">
+                            <img src="https://i.imgur.com/KdUTB4S.jpeg" alt="Projeto Agência 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.imgur.com/XM1dBQL.jpeg" alt="Projeto Agência 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.imgur.com/j6xDSIU.jpeg" alt="Projeto Agência 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.imgur.com/WHP4hji.jpeg" alt="Projeto Agência 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://i.imgur.com/LSVWcZ9.jpeg" alt="Projeto Agência 5">
+                        </div>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveAgencyCarousel(-1)">‹</button>
+                    <button class="carousel-button next" onclick="moveAgencyCarousel(1)">›</button>
+                </div>
+                <div class="carousel-dots" id="agencyCarouselDots"></div>
+            </div>
+        </section>
+
         <!-- Feed -->
         <section class="feed-section">
-            <!-- Post 1 - NOVO -->
-            <article class="post-card">
-                <div class="post-header">
-                    <p class="post-category">Performance & Métricas</p>
-                    <h2 class="post-title">Crescimento Mensurável</h2>
-                </div>
-                <img src="https://i.imgur.com/KdUTB4S.jpeg" alt="Post 1" class="post-image">
-            </article>
-
-            <!-- Post 2 - NOVO -->
-            <article class="post-card">
-                <div class="post-header">
-                    <p class="post-category">Conteúdo Estratégico</p>
-                    <h2 class="post-title">Planejamento Personalizado</h2>
-                </div>
-                <img src="https://i.imgur.com/XM1dBQL.jpeg" alt="Post 2" class="post-image">
-            </article>
-
-            <!-- Post 3 - NOVO -->
-            <article class="post-card">
-                <div class="post-header">
-                    <p class="post-category">Transformação Digital</p>
-                    <h2 class="post-title">Presença Consolidada</h2>
-                </div>
-                <img src="https://i.imgur.com/j6xDSIU.jpeg" alt="Post 3" class="post-image">
-            </article>
-
-            <!-- Post 4 - NOVO -->
-            <article class="post-card">
-                <div class="post-header">
-                    <p class="post-category">Alcance & Visibilidade</p>
-                    <h2 class="post-title">Expansão de Audiência</h2>
-                </div>
-                <img src="https://i.imgur.com/WHP4hji.jpeg" alt="Post 4" class="post-image">
-            </article>
-
-            <!-- Post 5 - NOVO -->
-            <article class="post-card">
-                <div class="post-header">
-                    <p class="post-category">Inovação & Criatividade</p>
-                    <h2 class="post-title">Diferenciação no Mercado</h2>
-                </div>
-                <img src="https://i.imgur.com/LSVWcZ9.jpeg" alt="Post 5" class="post-image">
-            </article>
-
-            <!-- Post 6 -->
+            <!-- Post 1 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Branding & Identidade Visual</p>
                     <h2 class="post-title">Construção de Autoridade</h2>
                 </div>
-                <img src="https://i.imgur.com/2IJ6SgC.jpeg" alt="Post 6" class="post-image">
+                <img src="https://i.imgur.com/2IJ6SgC.jpeg" alt="Post 1" class="post-image">
             </article>
 
-            <!-- Post 7 -->
+            <!-- Post 2 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Crescimento & Engajamento</p>
                     <h2 class="post-title">Estratégia de Conteúdo</h2>
                 </div>
-                <img src="https://i.imgur.com/zXf7sjw.jpeg" alt="Post 7" class="post-image">
+                <img src="https://i.imgur.com/zXf7sjw.jpeg" alt="Post 2" class="post-image">
             </article>
 
-            <!-- Post 8 -->
+            <!-- Post 3 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Conteúdo Educativo</p>
                     <h2 class="post-title">Informação com Propósito</h2>
                 </div>
-                <img src="https://i.imgur.com/SCrIWYI.jpeg" alt="Post 8" class="post-image">
+                <img src="https://i.imgur.com/SCrIWYI.jpeg" alt="Post 3" class="post-image">
             </article>
 
-            <!-- Post 9 -->
+            <!-- Post 4 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Posicionamento Digital</p>
                     <h2 class="post-title">Autoridade no Mercado</h2>
                 </div>
-                <img src="https://i.imgur.com/p3V71of.jpeg" alt="Post 9" class="post-image">
+                <img src="https://i.imgur.com/p3V71of.jpeg" alt="Post 4" class="post-image">
             </article>
 
-            <!-- Post 10 -->
+            <!-- Post 5 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Design & Criatividade</p>
                     <h2 class="post-title">Identidade Visual Marcante</h2>
                 </div>
-                <img src="https://i.imgur.com/78qqAle.jpeg" alt="Post 10" class="post-image">
+                <img src="https://i.imgur.com/78qqAle.jpeg" alt="Post 5" class="post-image">
             </article>
 
-            <!-- Post 11 -->
+            <!-- Post 6 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Estratégia de Redes</p>
                     <h2 class="post-title">Conexão com o Público</h2>
                 </div>
-                <img src="https://i.imgur.com/0g3UB9w.jpeg" alt="Post 11" class="post-image">
+                <img src="https://i.imgur.com/0g3UB9w.jpeg" alt="Post 6" class="post-image">
             </article>
 
-            <!-- Post 12 -->
+            <!-- Post 7 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Copywriting Persuasivo</p>
                     <h2 class="post-title">Mensagens que Convertem</h2>
                 </div>
-                <img src="https://i.imgur.com/L0Z9hsD.jpeg" alt="Post 12" class="post-image">
+                <img src="https://i.imgur.com/L0Z9hsD.jpeg" alt="Post 7" class="post-image">
             </article>
 
-            <!-- Post 13 -->
+            <!-- Post 8 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Planejamento de Conteúdo</p>
                     <h2 class="post-title">Consistência e Relevância</h2>
                 </div>
-                <img src="https://i.imgur.com/PMxstTr.jpeg" alt="Post 13" class="post-image">
+                <img src="https://i.imgur.com/PMxstTr.jpeg" alt="Post 8" class="post-image">
             </article>
 
-            <!-- Post 14 -->
+            <!-- Post 9 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Engajamento Orgânico</p>
                     <h2 class="post-title">Crescimento Sustentável</h2>
                 </div>
-                <img src="https://i.imgur.com/OjRHQZZ.jpeg" alt="Post 14" class="post-image">
+                <img src="https://i.imgur.com/OjRHQZZ.jpeg" alt="Post 9" class="post-image">
             </article>
 
-            <!-- Post 15 -->
+            <!-- Post 10 -->
             <article class="post-card">
                 <div class="post-header">
                     <p class="post-category">Resultados Comprovados</p>
                     <h2 class="post-title">Cases de Sucesso</h2>
                 </div>
-                <img src="https://i.imgur.com/Xoj8XUC.jpeg" alt="Post 15" class="post-image">
+                <img src="https://i.imgur.com/Xoj8XUC.jpeg" alt="Post 10" class="post-image">
             </article>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2025 Gabrielle Nolasco - Social Media | Todos os direitos reservados</p>
+            <p>&copy; 2026 Gabrielle Nolasco - Social Media | Todos os direitos reservados</p>
         </footer>
     </div>
 
     <script>
-        // Carousel functionality
+        // Lu Embalagens Carousel
         let currentSlide = 0;
         const track = document.getElementById('carouselTrack');
         const slides = track.querySelectorAll('.carousel-slide');
         const dotsContainer = document.getElementById('carouselDots');
         
-        // Create dots
+        // Create dots for Lu carousel
         slides.forEach((_, index) => {
             const dot = document.createElement('div');
             dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
@@ -656,14 +645,52 @@
         
         function updateCarousel() {
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
-            document.querySelectorAll('.carousel-dot').forEach((dot, index) => {
+            document.querySelectorAll('#carouselDots .carousel-dot').forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentSlide);
             });
         }
         
-        // Auto-play carousel
+        // Auto-play Lu carousel
         setInterval(() => {
             moveCarousel(1);
+        }, 5000);
+
+        // Agency Projects Carousel
+        let currentAgencySlide = 0;
+        const agencyTrack = document.getElementById('agencyCarouselTrack');
+        const agencySlides = agencyTrack.querySelectorAll('.carousel-slide');
+        const agencyDotsContainer = document.getElementById('agencyCarouselDots');
+        
+        // Create dots for agency carousel
+        agencySlides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot' + (index === 0 ? ' active' : '');
+            dot.onclick = () => goToAgencySlide(index);
+            agencyDotsContainer.appendChild(dot);
+        });
+        
+        function moveAgencyCarousel(direction) {
+            currentAgencySlide += direction;
+            if (currentAgencySlide < 0) currentAgencySlide = agencySlides.length - 1;
+            if (currentAgencySlide >= agencySlides.length) currentAgencySlide = 0;
+            updateAgencyCarousel();
+        }
+        
+        function goToAgencySlide(index) {
+            currentAgencySlide = index;
+            updateAgencyCarousel();
+        }
+        
+        function updateAgencyCarousel() {
+            agencyTrack.style.transform = `translateX(-${currentAgencySlide * 100}%)`;
+            document.querySelectorAll('#agencyCarouselDots .carousel-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentAgencySlide);
+            });
+        }
+        
+        // Auto-play agency carousel
+        setInterval(() => {
+            moveAgencyCarousel(1);
         }, 5000);
     </script>
 </body>
